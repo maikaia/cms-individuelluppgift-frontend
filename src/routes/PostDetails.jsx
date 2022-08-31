@@ -6,10 +6,11 @@ const PostDetails = () => {
   const { slug } = useParams()
   const [post, setPost] = useState(null)
   const [isLoading, setIsLoading] = useState(true)
-  console.log(post)
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/posts?slug=${slug}`)
+    fetch(`${process.env.REACT_APP_API_URL}/posts?slug=${slug}`, {
+      headers: { "Content-Type": "application/json" },
+    })
       .then((res) => {
         return res.json()
       })

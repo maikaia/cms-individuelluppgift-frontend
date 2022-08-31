@@ -9,7 +9,7 @@ const PostLink = ({ post }) => {
           {post.title.rendered} - {post.date}
         </h3>
       </Link>
-      <div>{parse(post.content.rendered)}</div>
+      <div>{parse(post.excerpt.rendered)}</div>
       <hr />
     </>
   )
