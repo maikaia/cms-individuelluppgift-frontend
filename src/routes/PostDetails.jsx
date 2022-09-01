@@ -27,13 +27,15 @@ const PostDetails = () => {
 
   return (
     <>
-      <div>
-        <h2>{post.title.rendered}</h2>
-        {parse(post.content.rendered)}
-      </div>
-      <hr />
-      <div>
-        Back to <Link to="/posts">posts</Link>.
+      <Link to="/posts"><i class="arrow"></i></Link>
+      <div className="center">
+        <div>
+          <h2>{post.title.rendered}</h2>
+          {parse(post.content.rendered)}
+          <p className="grayout">
+            {post.date.replace("T", " ")}
+          </p>
+        </div>
       </div>
     </>
   )

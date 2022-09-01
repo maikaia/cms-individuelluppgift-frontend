@@ -2,12 +2,12 @@ import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
-    <div>
+    <div className="center vertical-center">
       <h1>Welcome</h1>
       <p>This site is a demonstration of using wordpress as a headless CMS.</p>
-      <p>
-        <Link to="/posts">View all posts</Link>
-      </p>
+      <span>
+        <Link to="/posts"></Link>
+      </span>
     </div>
   )
 }

@@ -3,15 +3,17 @@ import parse from "html-react-parser"
 
 const PostLink = ({ post }) => {
   return (
-    <>
-      <Link to={`/posts/${post.slug}`}>
+      <Link to={`/posts/${post.slug}`} className="nostyle">
+    <div className="posts">
         <h3>
-          {post.title.rendered} - {post.date}
+          {post.title.rendered}
         </h3>
-      </Link>
       <div>{parse(post.content.rendered)}</div>
-      <hr />
-    </>
+      <p className="grayout">
+        {post.date.replace("T", " ")}
+      </p>
+    </div>
+      </Link>
   )
 }
 
