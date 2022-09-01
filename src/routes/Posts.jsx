@@ -10,7 +10,6 @@ const Posts = () => {
         return res.json()
       })
       .then((data) => setPosts(data))
-      .then((data) => (console.log(posts)))
   }, [])
 
   return (
