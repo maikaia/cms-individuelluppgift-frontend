@@ -12,14 +12,12 @@ const Posts = () => {
 
   return (
     <>
-      <div>
+      <Link to="/"><i class="arrow"></i></Link>
+      <div className="center">
         <h2>All posts</h2>
         {posts.map((post) => (
           <PostLink post={post} key={post.id} />
         ))}
-      </div>
-      <div>
-        Back <Link to="/">home</Link>
       </div>
     </>
   )
