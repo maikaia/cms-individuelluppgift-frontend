@@ -6,9 +6,7 @@ const Posts = () => {
   const [posts, setPosts] = useState([])
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/posts`)
-      .then((res) => {
-        return res.json()
-      })
+      .then((res) => res.json())
       .then((data) => setPosts(data))
   }, [])
 
