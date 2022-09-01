@@ -22,7 +22,7 @@ const PostDetails = () => {
   }, [slug])
 
   if (isLoading || !post) {
-    return <div>Loading...</div>
+    return <div className="center vertical-center">Loading...</div>
   }
 
   return (
