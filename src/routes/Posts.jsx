@@ -7,7 +7,7 @@ const Posts = () => {
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/posts`)
       .then((res) => res.json())
-      .then((data) => setPosts(data))
+      .then((data) => setPosts(data.posts))
   }, [])
 
   return (
