@@ -16,3 +16,8 @@
 5. In the Configure Project section in the next screen, toggle the Environment Variables to open and create an environment variable by adding `REACT_APP_API_URL` in the NAME field and the url to your wordpress.com API
 6. Click the Deploy button.
 7. Your website should now be deployed online, showing the contents of your WordPress.com website.
+
+## Contact
+Administrator: Nils-Olov Olsson
+
+Github: [Maikaia](https://github.com/Maikaia)
