@@ -22,5 +22,7 @@ Administrator: Nils-Olov Olsson
 
 Github: [Maikaia](https://github.com/Maikaia)
 
+Email: nolle_olsson_@hotmail.com
+
 ## Post to my API
 If you want to try posting something to my personal WordPress API, please provide your Wordpress username or email to nolle_olsson_@hotmail.com and I'll give you access to the site. If you don't already have an account you will get a link that takes you to wordpress.com signup. Follow the instructions to create your account, and you'll be able to start creating posts. Make sure you are posting on the correct site.
